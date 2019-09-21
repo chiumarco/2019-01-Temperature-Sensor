@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:2019-01 Temperature Sensor-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -116,8 +115,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 2550 4100 2300
 Wire Wire Line
-	4100 2300 4450 2300
-Wire Wire Line
 	4100 2750 4100 2550
 Wire Wire Line
 	3900 2550 4100 2550
@@ -173,10 +170,20 @@ F 3 "~" H 5000 2300 50  0001 C CNN
 	1    5000 2300
 	1    0    0    -1  
 $EndComp
-Connection ~ 4450 2300
-Wire Wire Line
-	4450 2300 5000 2300
 Wire Wire Line
 	3300 2550 3700 2550
 Connection ~ 5000 2300
+Wire Wire Line
+	4100 2300 5000 2300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D8508F5
+P 2980 3650
+F 0 "H1" H 3080 3696 50  0000 L CNN
+F 1 "MountingHole" H 3080 3605 50  0000 L CNN
+F 2 "0_Mechanical:MountingHole_3.2mm_M3" H 2980 3650 50  0001 C CNN
+F 3 "~" H 2980 3650 50  0001 C CNN
+	1    2980 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
